@@ -15,7 +15,7 @@
       <div class="profileStories">
         <div class="content">
           <div style="margin-left: 10px" class="center con-avatars">
-            <vs-avatar size="70">
+            <vs-avatar size="70" circle>
               <i class="bx bx-plus"></i>
             </vs-avatar>
             <div class style>
@@ -23,7 +23,7 @@
             </div>
           </div>
           <div class="icon-storie" v-for="index in 20" :key="index">
-            <vs-avatar size="70">
+            <vs-avatar size="70" circle history history-gradient>
               <i class="bx bx-user"></i>
             </vs-avatar>
             <div class style>
@@ -98,119 +98,5 @@ export default {
 </script>
 
 <style>
-.justify-between {
-  display: flex;
-  justify-content: space-between;
-}
 
-.icons-header {
-  font-size: 30px;
-}
-
-.header-home {
-  overflow: hidden;
-  background-color: white;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 100;
-  box-shadow: 0 1px 40px -20px rgba(0, 0, 0, 0.75);
-}
-
-.break {
-  margin-top: 70px;
-}
-
-.break-2 {
-  margin-top: 20px;
-}
-.header-home-son {
-  padding: 10px;
-}
-.content-home {
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.stories {
-  background-color: red;
-}
-
-.profileStories::-webkit-scrollbar {
-  display: none;
-}
-.profileStories {
-  overflow-x: scroll;
-  width: 100%;
-}
-
-.content {
-  text-align: center;
-  display: inline-flex;
-  text-align: center;
-  margin-top: 10px;
-}
-
-.icon-storie {
-  margin-left: 10px;
-}
-
-.content-photos {
-  /*a*/
-}
-
-.header-post {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.content-post {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.description-post {
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.icons-post{
-  margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-}
-
-.image-crop {
-  border-radius: 30px 30px 30px 30px;
-  -moz-border-radius: 30px 30px 30px 30px;
-  -webkit-border-radius: 30px 30px 30px 30px;
-  border: 0px solid #000000;
-  box-shadow: 0 25px 40px -20px rgba(0, 0, 0, 0.75);
-}
-
-.icon-left{
-  margin-left: 10px;
-}
-
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-.likes {
-  margin-top: 10px;
-}
-
-.content-group {
-  margin-top: 8px;
-  display: flex;
-  justify-content: end;
-}
-
-.end{
-  margin-bottom: 85px;
-}
 </style>
